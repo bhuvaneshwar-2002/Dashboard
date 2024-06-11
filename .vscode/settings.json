@@ -1,0 +1,11 @@
+{
+    "iconifySearch.codeType": "unocss",
+    "iconifySearch.favorTabs": [
+        "zmdi",
+        "ant-design",
+        "bi",
+        "cbi",
+        "uis"
+    ],
+    "iconifySearch.favorGroup": ""
+}
