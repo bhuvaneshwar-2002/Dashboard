@@ -1,37 +1,41 @@
 <div class="dashboard">
-    <div class="dashboard-section">
-      <h2>Assets In Plant</h2>
-      <p>1000</p>
-    </div>
-    <div class="dashboard-section">
-      <h2>Assets Out Plant</h2>
-      <p>1000</p>
-    </div>
-    <div class="dashboard-section">
-      <h2>Assets Inwards</h2>
-      <p>1000</p>
-    </div>
-    <div class="dashboard-section">
-      <h2>Assets Outwards</h2>
-      <p>1000</p>
-    </div>
-    <div>
-    <div class="beacons">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>
-            <span class="asset">ASSETS WITH BEACONS</span>
-          </mat-card-title>
-          <mat-card-subtitle>
-            <h6>Last Updated</h6> <span id="update"> </span>
-          </mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-footer>
-          <div class="beacon">
-            <mat-card-subtitle>1000</mat-card-subtitle>
-            <!-- <img mat-card-image src="assets/icons/Info/Beacon.png" alt="Beacon_img"> -->
-          </div>
-          <hr>
+  <!-- Dashboard Sections -->
+  <div class="dashboard-section">
+    <h2>Assets In Plant</h2>
+    <p>1000</p>
+  </div>
+  <div class="dashboard-section">
+    <h2>Assets Out Plant</h2>
+    <p>1000</p>
+  </div>
+  <div class="dashboard-section">
+    <h2>Assets Inwards</h2>
+    <p>1000</p>
+  </div>
+  <div class="dashboard-section">
+    <h2>Assets Outwards</h2>
+    <p>1000</p>
+  </div>
+
+  <!-- Beacons Section -->
+  <div class="beacons">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <span class="asset">ASSETS WITH BEACONS</span>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <h6>Last Updated</h6> 
+          <span id="update"></span>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-footer>
+        <div class="beacon">
+          <mat-card-subtitle>1000</mat-card-subtitle>
+          <!-- <img mat-card-image src="assets/icons/Info/Beacon.png" alt="Beacon_img"> -->
+        </div>
+        <hr>
+        <div class="seperate">
           <div class="seperate1">
             <ul>
               <li>1500</li>
@@ -39,8 +43,8 @@
               <li>1</li>
               <li>1</li>
             </ul>
-            </div>
-            <div class="seperate2">
+          </div>
+          <div class="seperate2">
             <ul>
               <li>Total Assets</li>
               <li>No of Sites</li>
@@ -48,27 +52,65 @@
               <li>No of Zones</li>
             </ul>
           </div>
-        </mat-card-footer>
+        </div>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>
+
+<!-- Content Section -->
+<div class="content">
+  <div class="container">
+    <!-- Customer Details Section -->
+    <div class="cust_details">
+      <mat-card>
+        <mat-card-header class="details">
+          <div class="cust">
+            <mat-card-title>
+              <span>Customer Details</span>
+            </mat-card-title>
+            <app-cust-details></app-cust-details>
+          </div>  
+        </mat-card-header>
       </mat-card>
     </div>
-    
-    </div>
-    
-  </div>
-  <div class="content">
-    <div class="container">
-      <div class="cust_details">
-        <mat-card>
-          <mat-card-header class="details">
-            <div class="cust">
-              <mat-card-title >
-                <span>Customer Details</span>
-              </mat-card-title>
-                <app-cust-details></app-cust-details>
-            </div>  
-          </mat-card-header>
-        </mat-card>
-      </div>
-    </div>
-  </div>
+  </div>  
+    <!-- Hourly Dispatch Section -->
+  <mat-card>
+      <mat-card-header class="hrs-dis" style="display: flow-root; width: 393px; height: 211px;">
+        <mat-card-title>
+          <h5>Hourly Dispatch</h5>
+        </mat-card-title>
+        <mat-card-subtitle>
+          Details
+        </mat-card-subtitle>
+        <div>
+          <app-hourly-dispatch></app-hourly-dispatch>
+        </div>
+      </mat-card-header>
+    </mat-card>
   
+    <!-- Item Category Section -->
+  <div class="item_category">
+      <app-items-category></app-items-category>
+    </div>  
+</div>
+
+<!-- Details Section-->
+<div class="section">
+  <div class="ch-table">
+    <mat-card class="montly_details">
+      <mat-card-header >
+        <mat-card-title>
+          <span>Monthly Dispatch Details</span>
+        </mat-card-title>
+        <app-monthly-dispatch></app-monthly-dispatch>
+      </mat-card-header>
+    </mat-card>
+  </div>
+  <!-- <div class="table">
+    <mat-card>
+      <app-asset-table></app-asset-table>
+    </mat-card>
+  </div>
+</div> -->

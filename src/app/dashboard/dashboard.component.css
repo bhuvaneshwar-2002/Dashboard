@@ -30,8 +30,7 @@
   }
   .content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   
   .beacon{
@@ -52,5 +51,26 @@
   
   .details{
     width: 300px;
-    height:300px;
+    height:221px;
   }
+  .mat-mdc-card-header .hrs{
+    display:inline-block;
+  }
+  
+  .mat-mdc-card-header .details{
+    padding-top: 20px;
+  }
+
+  .section{
+    /* display: flex; */
+    padding-top: 40px;
+
+  }
+   .montly_details{
+    width: 329px;
+    height: 300px;
+  }
+  .mat-mdc-card-header .hrs-dis{
+    display: flow-root;
+  }
+  

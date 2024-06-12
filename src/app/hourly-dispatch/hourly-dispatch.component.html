@@ -1,3 +1,16 @@
-<div class="chart-container">
-    <canvas  id="MyChart" >{{ chart }}</canvas>
-</div>
+<div id="chart">
+    <mat-card class="change1q">
+      <mat-card-header class="change">
+        <apx-chart
+          [series]="chartOptions.series!"
+          [chart]="chartOptions.chart!"
+          [xaxis]="chartOptions.xaxis!"
+          [stroke]="chartOptions.stroke!"
+          [tooltip]="chartOptions.tooltip!"
+          [dataLabels]="chartOptions.dataLabels!">
+       </apx-chart>
+      </mat-card-header>
+    </mat-card>
+    
+  </div>
+  

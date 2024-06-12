@@ -3,10 +3,15 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { PieChartComponent } from '../cust-details/cust-details.component';
 import { HourlyDispatchComponent } from '../hourly-dispatch/hourly-dispatch.component';
+import { ItemsCategoryComponent } from '../items-category/items-category.component';
+import { AssetTableComponent } from '../asset-table/asset-table.component';
+import { MonthlyDispatchComponent } from '../monthly-dispatch/monthly-dispatch.component';
+
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [MatCardModule, MatButtonModule, PieChartComponent, HourlyDispatchComponent],
+  imports: [MatCardModule, MatButtonModule, PieChartComponent, HourlyDispatchComponent,
+     ItemsCategoryComponent,AssetTableComponent, MonthlyDispatchComponent, ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
