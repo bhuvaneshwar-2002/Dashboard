@@ -1,59 +1,35 @@
 import { Component,OnInit, ViewChild } from '@angular/core';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
 
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatFormField } from '@angular/material/form-field';
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+
+export interface TrolleyData {
+  sno: string;
+  assetName: string;
+  site: string;
+  zone: string;
+  time: string;
+  status: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.81, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.01, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.01, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 16.00, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 19.00, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.18, symbol: 'Ne'},
+const ELEMENT_DATA: TrolleyData[] = [
+  {sno: '01', assetName: 'Trolleys', site: 'Site A', zone: 'MATE III - IN', time: '25 MAY 2024, 12.45 A.M', status: 'In Production'},
+  {sno: '02', assetName: 'Trolleys', site: 'Site B', zone: 'MATE III - OUT', time: '25 MAY 2024, 12.45 A.M', status: 'Dispatched'},
+  {sno: '03', assetName: 'Trolleys', site: 'Site C', zone: 'MATE III - IN', time: '25 MAY 2024, 12.45 A.M', status: 'In Production'},
+  {sno: '04', assetName: 'Trolleys', site: 'Site D', zone: 'MATE III - OUT', time: '25 MAY 2024, 12.45 A.M', status: 'Dispatched'},
+  {sno: '05', assetName: 'Trolleys', site: 'Site E', zone: 'MATE III - IN', time: '25 MAY 2024, 12.45 A.M', status: 'In Production'},
+  {sno: '06', assetName: 'Trolleys', site: 'Site F', zone: 'MATE III - OUT', time: '25 MAY 2024, 12.45 A.M', status: 'Dispatched'}
 ];
+
 
 
 @Component({
   selector: 'app-asset-table',
   standalone: true,
-  imports: [MatTableModule,MatPaginatorModule,MatSortModule,MatPaginator,MatSort,MatFormField],
+  imports: [ MatTableModule],
   templateUrl: './asset-table.component.html',
   styleUrl: './asset-table.component.css'
 })
-export class AssetTableComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
-
-  @ViewChild(MatPaginator)
-  paginator!: MatPaginator;
-  @ViewChild(MatSort)
-  sort!: MatSort;
-
-  ngOnInit() {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
-  }
-
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage();
-    }
-  }
+export class AssetTableComponent {
+  displayedColumns: string[] = ['sno', 'assetName', 'site', 'zone', 'time', 'status'];
+  dataSource = ELEMENT_DATA;
 }
