@@ -1,0 +1,26 @@
+<div class="recent_trans">
+  <p-table  [paginator]="true"
+  [rows]="5"
+  [tableStyle]="{ 'min-width': '50rem' }"
+  [rowsPerPageOptions]="[5, 10, 20]"
+>>
+    <ng-template p-Template="header">
+      <tr>
+        <th>Sno</th>
+        <th>Name</th>
+        <th>Condition</th>
+        <th>Status</th>
+        <th>Category</th>
+        <th>Location</th>
+        <th>Last Seen</th>
+      </tr>
+    </ng-template>
+    <ng-template p-Template="body" let-details>
+      <tr ></tr>
+      <td>{{details.code}}</td>
+      <td>{{details.name}}</td>
+      <td>{{details.category}}</td>
+      <td>
+    </ng-template>
+  </p-table>
+</div>

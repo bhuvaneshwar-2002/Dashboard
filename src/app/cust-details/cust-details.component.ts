@@ -13,7 +13,7 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrl: './cust-details.component.css'
 })
 
-export class PieChartComponent {
+export class CustDetailsComponent {
   public chart: any;
   ngOnInit(): void {
     this.createChart();
