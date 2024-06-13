@@ -1,6 +1,7 @@
 
 import { Component } from '@angular/core';
 import Chart from 'chart.js/auto';
+import { ChartOptions } from 'chart.js/auto';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 
@@ -23,6 +24,7 @@ export class PieChartComponent {
       type: 'doughnut', //this denotes tha type of chart
 
       data: {// values on X-Axis
+        
         labels: ['Hyundai','RNAIPL','Daimler',],
 	       datasets: [{
     label: 'My First Dataset',
@@ -32,11 +34,14 @@ export class PieChartComponent {
       '#FD6363',
       '#FDD7C6'
     ],
-    hoverOffset: 4
+    
+    hoverOffset: 4,
+    borderRadius: 10
   }],
       },
+      
       options: {
-        aspectRatio:2.5
+        aspectRatio:0.5,
       }
 
     });
