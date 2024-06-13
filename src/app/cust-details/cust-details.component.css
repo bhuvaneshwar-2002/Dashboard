@@ -1,15 +1,16 @@
-#MyChart{
+canvas#MyChart{
     display: flex;
-    width: 300px;
+    width: 500px;
     height: 400px;
     flex-direction: column-reverse;
 }
 .mat-mdc-card-header.change{
     display: contents;
-    width: 415px;
+    width: 555px;
     height: 376px;
     }
     
-.mat-mdc-card-content{
+.mat-mdc-card-content:last-child{
     height: 381px;
+    width: 392px;
 }

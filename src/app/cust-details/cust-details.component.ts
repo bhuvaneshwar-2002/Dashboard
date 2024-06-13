@@ -25,7 +25,7 @@ export class PieChartComponent {
 
       data: {// values on X-Axis
         
-        labels: ['Hyundai','RNAIPL','Daimler',],
+        
 	       datasets: [{
     label: 'My First Dataset',
     data: [240, 432, 134],
@@ -34,15 +34,27 @@ export class PieChartComponent {
       '#FD6363',
       '#FDD7C6'
     ],
-    
     hoverOffset: 4,
     borderRadius: 10
   }],
+  labels: ['Hyundai','RNAIPL','Daimler',],
       },
       
       options: {
         aspectRatio:0.5,
+        plugins: {
+          title: {
+              display: true,
+              text: 'Custom Chart Title',
+              padding: {
+                  top: 0,
+                  bottom: 0
+              }
+          }
       }
+        
+      }
+     
 
     });
   }

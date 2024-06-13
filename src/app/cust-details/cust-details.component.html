@@ -1,10 +1,15 @@
 <div class="chart-container">
     <div class="chart-Div">
-        <mat-card>
-            <mat-card-header class="change">
-                <mat-card-title><h5>Customer Details</h5></mat-card-title></mat-card-header>
+        <mat-card class="mat-mdc-card-content">
+           
                 <mat-card-content>
-                    <canvas  id="MyChart" >{{ chart }}</canvas>
+                    <canvas  id="MyChart"
+                     style="display: flex;
+                    box-sizing: border-box;
+                    height: 381px;
+                    width: 190px;
+                    position: relative;
+                    left: 66px;">{{ chart }}</canvas>
                 </mat-card-content>
             
         </mat-card>
