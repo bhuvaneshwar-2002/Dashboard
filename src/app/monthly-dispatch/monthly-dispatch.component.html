@@ -1,12 +1,27 @@
 <div id="chart">
-  <apx-chart
-    [series]="chartOptions.series!"
-    [chart]="chartOptions.chart!"
-    [dataLabels]="chartOptions.dataLabels!"
-    [plotOptions]="chartOptions.plotOptions!"
-    [responsive]="chartOptions.responsive!"
-    [xaxis]="chartOptions.xaxis!"
-    [legend]="chartOptions.legend!"
-    [fill]="chartOptions.fill!"
-  ></apx-chart>
+  <div class="chart-Div">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <span>Monthly Dispatch</span>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <h6>Details</h6>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-footer>
+        <apx-chart
+          [series]="chartOptions.series!"
+          [chart]="chartOptions.chart!"
+          [dataLabels]="chartOptions.dataLabels!"
+          [plotOptions]="chartOptions.plotOptions!"
+          [responsive]="chartOptions.responsive!"
+          [xaxis]="chartOptions.xaxis!"
+          [legend]="chartOptions.legend!"
+          [fill]="chartOptions.fill!">
+        </apx-chart>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+  
 </div>

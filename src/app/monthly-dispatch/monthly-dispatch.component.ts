@@ -1,4 +1,6 @@
 import { Component, ViewChild } from "@angular/core";
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 import { NgApexchartsModule } from "ng-apexcharts";
 import {
   ApexAxisChartSeries,
@@ -26,7 +28,7 @@ export type ChartOptions = {
 @Component({
   selector: 'app-monthly-dispatch',
   standalone: true,
-  imports: [NgApexchartsModule],
+  imports: [NgApexchartsModule,MatButtonModule,MatCardModule],
   templateUrl: './monthly-dispatch.component.html',
   styleUrl: './monthly-dispatch.component.css'
 })
@@ -38,25 +40,18 @@ export class MonthlyDispatchComponent {
     this.chartOptions = {
       series: [
         {
-          name: "PRODUCT A",
-          data: [44, 55, 41, 67, 22, 43]
+          name: "Asset IN",
+          data: [44, 55, 41, 67, 22, 43,89,99,56,21,78,56]
         },
         {
-          name: "PRODUCT B",
-          data: [13, 23, 20, 8, 13, 27]
-        },
-        {
-          name: "PRODUCT C",
-          data: [11, 17, 15, 15, 21, 14]
-        },
-        {
-          name: "PRODUCT D",
-          data: [21, 7, 25, 13, 22, 8]
+          name: "Asset OUT",
+          data: [13, 23, 20, 8, 13, 27,23,56,45,78,89,46]
         }
       ],
       chart: {
         type: "bar",
-        height: 350,
+        height: 290,
+        width: 450,
         stacked: true,
         toolbar: {
           show: true
@@ -85,17 +80,24 @@ export class MonthlyDispatchComponent {
       xaxis: {
         type: "category",
         categories: [
-          "01/2011",
-          "02/2011",
-          "03/2011",
-          "04/2011",
-          "05/2011",
-          "06/2011"
+          "01/2024",
+          "02/2024",
+          "03/2024",
+          "04/2024",
+          "05/2024",
+          "06/2024",
+          "07/2024",
+          "08/2024",
+          "09/2024",
+          "10/2024",
+          "11/2024",
+          "12/2024",
         ]
       },
       legend: {
-        position: "right",
-        offsetY: 40
+        position: "bottom",
+        offsetX: 40,
+        
       },
       fill: {
         opacity: 1

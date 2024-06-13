@@ -1,0 +1,15 @@
+mat-card{
+    width: 500px;
+    height: 395px;
+}
+div.apexcharts-legend.apexcharts-align-center.apx-legend-position-right{
+    position: absolute;
+    left: 218px;
+    top: -2px;
+    /* right: 5px; */
+    display: flex;
+    flex-direction: row;
+}
+div.apexcharts-toolbar{
+    right: 117px;
+}

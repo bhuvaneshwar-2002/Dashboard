@@ -62,8 +62,9 @@
   }
 
   .section{
-    /* display: flex; */
+    display: flex;
     padding-top: 40px;
+    width: 900px;
 
   }
    .montly_details{

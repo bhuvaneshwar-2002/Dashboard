@@ -6,12 +6,13 @@ import { HourlyDispatchComponent } from '../hourly-dispatch/hourly-dispatch.comp
 import { ItemsCategoryComponent } from '../items-category/items-category.component';
 import { AssetTableComponent } from '../asset-table/asset-table.component';
 import { MonthlyDispatchComponent } from '../monthly-dispatch/monthly-dispatch.component';
+import { AssetOutcomeComponent } from '../asset-outcome/asset-outcome.component';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
   imports: [MatCardModule, MatButtonModule, PieChartComponent, HourlyDispatchComponent,
-     ItemsCategoryComponent,AssetTableComponent, MonthlyDispatchComponent, ],
+     ItemsCategoryComponent,AssetTableComponent, MonthlyDispatchComponent, AssetOutcomeComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })

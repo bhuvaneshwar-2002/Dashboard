@@ -37,16 +37,17 @@ export class HourlyDispatchComponent {
     this.chartOptions = {
       series: [
         {
-          name: "series1",
-          data: [31, 40, 28, 51, 42, 109, 100]
+          name: "Asset In",
+          data: [31, 40, 28, 51, 42, 109, 100,45,78,56,12,45,46]
         },
         {
-          name: "series2",
-          data: [11, 32, 45, 32, 34, 52, 41]
+          name: "Asset OUT",
+          data: [11, 32, 45, 32, 34, 52, 41,97,46,13,89,56,28,89]
         }
       ],
       chart: {
-        height: 350,
+        height: 350,  //change the height of the chart
+        width: 400,   //change the width of the chart
         type: "area"
       },
       dataLabels: {
@@ -64,7 +65,14 @@ export class HourlyDispatchComponent {
           "2018-09-19T03:30:00.000Z",
           "2018-09-19T04:30:00.000Z",
           "2018-09-19T05:30:00.000Z",
-          "2018-09-19T06:30:00.000Z"
+          "2018-09-19T06:30:00.000Z",
+          "2018-09-19T07:00:00.000Z",
+          "2018-09-19T08:30:00.000Z",
+          "2018-09-19T09:30:00.000Z",
+          "2018-09-19T10:30:00.000Z",
+          "2018-09-19T11:30:00.000Z",
+          "2018-09-19T12:30:00.000Z",
+          "2018-09-19T13:30:00.000Z",
         ]
       },
       tooltip: {

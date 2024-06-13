@@ -70,11 +70,9 @@
     </div>
   </div>  
     <!-- Hourly Dispatch Section -->
-  
-      
-        <div>
-          <app-hourly-dispatch></app-hourly-dispatch>
-        </div>
+    <div>
+      <app-hourly-dispatch></app-hourly-dispatch>
+    </div>
       
     
   
@@ -87,18 +85,14 @@
 <!-- Details Section-->
 <div class="section">
   <div class="ch-table">
-    <mat-card class="montly_details">
-      <mat-card-header >
-        <mat-card-title>
-          <span>Monthly Dispatch Details</span>
-        </mat-card-title>
-        <app-monthly-dispatch></app-monthly-dispatch>
-      </mat-card-header>
-    </mat-card>
+    <app-monthly-dispatch></app-monthly-dispatch>  
   </div>
   <div class="table">
     <mat-card>
       <app-asset-table></app-asset-table>
     </mat-card>
+  </div>
+  <div class="outcome">
+    <app-asset-outcome></app-asset-outcome>
   </div>
 </div>
