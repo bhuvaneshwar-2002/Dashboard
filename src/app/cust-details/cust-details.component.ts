@@ -24,8 +24,8 @@ export class PieChartComponent {
       type: 'doughnut', //this denotes tha type of chart
 
       data: {// values on X-Axis
-        
-        
+
+
 	       datasets: [{
     label: 'My First Dataset',
     data: [240, 432, 134],
@@ -39,25 +39,29 @@ export class PieChartComponent {
   }],
   labels: ['Hyundai','RNAIPL','Daimler',],
       },
-      
-      options: {
-        aspectRatio:0.5,
+
+      options: {aspectRatio:0.5,
+        responsive: true,
+
+
+
         plugins: {
+          legend: {
+            position: 'bottom',
+            align:'start',
+
+          },
           title: {
               display: true,
-              text: 'Custom Chart Title',
-              padding: {
-                  top: 0,
-                  bottom: 0
-              }
+              // text: 'Custom Chart Title', //Chart Title
+
           }
       }
-        
       }
-     
+
 
     });
   }
-  
+
 
 }

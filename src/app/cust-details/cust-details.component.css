@@ -9,8 +9,11 @@ canvas#MyChart{
     width: 555px;
     height: 376px;
     }
-    
+
 .mat-mdc-card-content:last-child{
     height: 381px;
     width: 392px;
+}
+.chart-container{
+  padding-right: 100px;
 }
