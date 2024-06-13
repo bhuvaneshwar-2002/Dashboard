@@ -46,8 +46,9 @@ export class HourlyDispatchComponent {
         }
       ],
       chart: {
-        height: 350,  //change the height of the chart
-        width: 400,   //change the width of the chart
+        height: 300,  //change the height of the chart
+        width: 392,   //change the width of the
+
         type: "area"
       },
       dataLabels: {

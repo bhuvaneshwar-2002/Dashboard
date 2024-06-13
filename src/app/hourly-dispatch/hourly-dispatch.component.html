@@ -1,8 +1,9 @@
 <div id="chart">
-    <mat-card class="change1q">
-      <mat-card-header class="change">
-        <mat-card-title><h5>Hourly Dispatch</h5></mat-card-title>
-        <mat-card-subtitle><h6>Details</h6></mat-card-subtitle>
+    <mat-card style="height: 381px; right: 62px; position: relative;">
+
+
+        <mat-card-content >
+          <span>Hourly Dispatch Details</span>
         <apx-chart
           [series]="chartOptions.series!"
           [chart]="chartOptions.chart!"
@@ -11,8 +12,8 @@
           [tooltip]="chartOptions.tooltip!"
           [dataLabels]="chartOptions.dataLabels!">
        </apx-chart>
-      </mat-card-header>
+      </mat-card-content>
+
     </mat-card>
-    
+
   </div>
-  
