@@ -1,8 +1,15 @@
-canvas{
-    display: block;
-    box-sizing: border-box;
-    height: 119px;
+#MyChart{
+    display: flex;
     width: 300px;
-    margin-top: 46px;
+    height: 400px;
     flex-direction: column-reverse;
+}
+.mat-mdc-card-header.change{
+    display: contents;
+    width: 415px;
+    height: 376px;
+    }
+    
+.mat-mdc-card-content{
+    height: 381px;
 }

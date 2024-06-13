@@ -73,4 +73,9 @@
   .mat-mdc-card-header .hrs-dis{
     display: flow-root;
   }
+  .mat-mdc-card-content:last-child{
+    display: flow;
+    padding: 0 16px;
+    padding-top: 20px;
+}
   

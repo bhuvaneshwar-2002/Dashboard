@@ -1,11 +1,13 @@
 
 import { Component } from '@angular/core';
 import Chart from 'chart.js/auto';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-cust-details',
   standalone: true,
-  
+  imports: [MatCardModule,MatButtonModule],
   templateUrl: './cust-details.component.html',
   styleUrl: './cust-details.component.css'
 })
