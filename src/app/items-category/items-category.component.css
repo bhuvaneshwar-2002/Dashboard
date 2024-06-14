@@ -1,13 +1,11 @@
-.item_category{
-    display: flex;
-}
+
 .mat-mdc-card-subtitle{
     padding-left: 20px;
 }
   .background_275-1658 {
     display: flex;
   }
-  
+
   .text-title_275-1659 {
     color: #414d55;
     font-size: 16px;
@@ -20,7 +18,7 @@
     width: 180px;
     height: 18px;
   }
-  
+
   .text-4-2_275-1685 {
     color: #414d55;
     font-family: Poppins;
@@ -32,7 +30,7 @@
     width: 240px;
     height: 34px;
   }
-  
+
   .hmil_604-1759 {
     width: 266px;
     height: 28px;
@@ -43,11 +41,11 @@
   .background_275-1677 {
     display: flex;
   }
-  
+
   .rectangle_275-1678 {
     display: flex;
   }
-  
+
   .text-hmil_275-1679 {
     color: #696d6e;
     font-size: 12px;
@@ -60,7 +58,7 @@
     width: 80px;
     height: 17px;
   }
-  
+
   .text-5-stars_275-1680 {
     color: #696d6e7f;
     font-size: 12px;
@@ -73,7 +71,9 @@
     width: 64px;
     height: 17px;
   }
-  
+
+
+
   .rnaipl_604-1760 {
     width: 261px;
     height: 29px;
@@ -84,13 +84,13 @@
   .background_275-1673 {
     display: flex;
   }
-  
+
   .rectangle_275-1674 {
     display: flex;
   }
-  
-  .text-5-stars_275-1681 {
-    color: #696d6e7f;
+
+  .text {
+    color: #696d6e;
     font-size: 12px;
     font-family: Roboto;
     line-height: 20px;
@@ -101,7 +101,7 @@
     width: 58px;
     height: 17px;
   }
-  
+
   .text-4-stars_275-1675 {
     color: #696d6e;
     font-size: 12px;
@@ -114,7 +114,7 @@
     width: 150px;
     height: 19px;
   }
-  
+
   .rbc_604-1761 {
     width: 266px;
     height: 28px;
@@ -125,11 +125,11 @@
   .background_275-1669 {
     display: flex;
   }
-  
+
   .rectangle_275-1670 {
     display: flex;
   }
-  
+
   .text-5-stars_275-1682 {
     color: #696d6e7f;
     font-size: 12px;
@@ -142,7 +142,7 @@
     width: 64px;
     height: 17px;
   }
-  
+
   .text-3-stars_275-1671 {
     color: #696d6e;
     font-size: 12px;
@@ -155,7 +155,7 @@
     width: 150px;
     height: 18px;
   }
-  
+
   .mobis_604-1762 {
     width: 266px;
     height: 29px;
@@ -166,11 +166,11 @@
   .background_275-1665 {
     display: flex;
   }
-  
+
   .rectangle_275-1666 {
     display: flex;
   }
-  
+
   .text-5-stars_275-1683 {
     color: #696d6e7f;
     font-size: 12px;
@@ -183,7 +183,7 @@
     width: 64px;
     height: 17px;
   }
-  
+
   .text-2-stars_275-1667 {
     color: #696d6e;
     font-size: 12px;
@@ -196,7 +196,7 @@
     width: 98px;
     height: 18px;
   }
-  
+
   .support_604-1763 {
     width: 261px;
     height: 29px;
@@ -207,11 +207,11 @@
   .background_275-1661 {
     display: flex;
   }
-  
+
   .rectangle_275-1662 {
     display: flex;
   }
-  
+
   .text-5-stars_275-1684 {
     color: #696d6e7f;
     font-size: 12px;
@@ -224,7 +224,7 @@
     width: 58px;
     height: 17px;
   }
-  
+
   .text-1-star_275-1663 {
     color: #696d6e;
     font-size: 12px;
@@ -237,4 +237,3 @@
     width: 65px;
     height: 18px;
   }
-  
