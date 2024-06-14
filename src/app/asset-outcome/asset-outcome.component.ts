@@ -96,15 +96,15 @@ export class AssetOutcomeComponent {
       chart: {
         type: "area",
         height: 290,
-        width: 300,
+        width: 370,
       },
       annotations: {
         yaxis: [
           {
             y: 30,
-            borderColor: "#999",
+
             label: {
-              text: "Support",
+
               style: {
                 color: "#fff",
                 background: "#00E396"
@@ -115,9 +115,9 @@ export class AssetOutcomeComponent {
         xaxis: [
           {
             x: new Date("14 Nov 2012").getTime(),
-            borderColor: "#999",
+
             label: {
-              text: "Rally",
+
               style: {
                 color: "#fff",
                 background: "#775DD0"
