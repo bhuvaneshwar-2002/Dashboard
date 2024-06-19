@@ -2,6 +2,7 @@ import { Component,OnInit, ViewChild } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 
 
+
 export interface TrolleyData {
   sno: string;
   assetName: string;
@@ -32,4 +33,5 @@ const ELEMENT_DATA: TrolleyData[] = [
 export class AssetTableComponent {
   displayedColumns: string[] = ['sno', 'assetName', 'site', 'zone', 'time', 'status'];
   dataSource = ELEMENT_DATA;
+
 }

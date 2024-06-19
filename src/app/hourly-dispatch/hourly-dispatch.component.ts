@@ -1,33 +1,34 @@
-
 import { Component, ViewChild } from "@angular/core";
 import { NgApexchartsModule } from "ng-apexcharts";
-import {MatCard, MatCardModule} from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
+import { MatCard, MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 import {
-    ChartComponent,
-    ApexAxisChartSeries,
-    ApexChart,
-    ApexXAxis,
-    ApexDataLabels,
-    ApexTooltip,
-    ApexStroke
-  } from "ng-apexcharts";
+  ChartComponent,
+  ApexAxisChartSeries,
+  ApexChart,
+  ApexXAxis,
+  ApexDataLabels,
+  ApexTooltip,
+  ApexStroke,
+  ApexFill
+} from "ng-apexcharts";
 
-  export type ChartOptions = {
-    series: ApexAxisChartSeries;
-    chart: ApexChart;
-    xaxis: ApexXAxis;
-    stroke: ApexStroke;
-    tooltip: ApexTooltip;
-    dataLabels: ApexDataLabels;
-  };
+export type ChartOptions = {
+  series: ApexAxisChartSeries;
+  chart: ApexChart;
+  xaxis: ApexXAxis;
+  stroke: ApexStroke;
+  tooltip: ApexTooltip;
+  dataLabels: ApexDataLabels;
+  fill: ApexFill;
+};
 
 @Component({
   selector: 'app-hourly-dispatch',
   standalone: true,
-  imports: [NgApexchartsModule,MatCard,MatCardModule,MatButtonModule],
+  imports: [NgApexchartsModule, MatCard, MatCardModule, MatButtonModule],
   templateUrl: './hourly-dispatch.component.html',
-  styleUrl: './hourly-dispatch.component.css'
+  styleUrls: ['./hourly-dispatch.component.css']
 })
 export class HourlyDispatchComponent {
   @ViewChild("chart") chart: ChartComponent;
@@ -38,24 +39,45 @@ export class HourlyDispatchComponent {
       series: [
         {
           name: "Asset In",
-          data: [31, 40, 28, 51, 42, 109, 100,45,78,56,12,45,46]
+          data: [31, 40, 28, 51, 42, 109, 100, 45, 78, 56, 12, 45, 46]
         },
         {
           name: "Asset OUT",
-          data: [11, 32, 45, 32, 34, 52, 41,97,46,13,89,56,28,89]
+          data: [11, 32, 45, 32, 34, 52, 41, 97, 46, 13, 89, 56, 28, 89]
         }
       ],
       chart: {
-        height: 300,  //change the height of the chart
-        width: 600,   //change the width of the
-
+        height: 300,
+        width: 600,
         type: "area"
       },
       dataLabels: {
         enabled: false
       },
       stroke: {
-        curve: "smooth"
+        curve: "smooth",
+        colors: ['#FF5733', '#33FF57'] // Change the curve colors here
+      },
+      fill: {
+        type: "gradient",
+        gradient: {
+          shadeIntensity: 1,
+          opacityFrom: 0.7,
+          opacityTo: 0.9,
+          stops: [0, 90, 100],
+          colorStops: [
+            {
+              offset: 0,
+              color: "#FFFFFF",
+              opacity: 0.7
+            },
+            {
+              offset: 100,
+              color: "#FFFFFF",
+              opacity: 0.9
+            }
+          ]
+        }
       },
       xaxis: {
         type: "datetime",
@@ -89,8 +111,7 @@ export class HourlyDispatchComponent {
     var series = [];
     while (i < count) {
       var x = Math.floor(Math.random() * (750 - 1 + 1)) + 1;
-      var y =
-        Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+      var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
       var z = Math.floor(Math.random() * (75 - 15 + 1)) + 15;
 
       series.push([x, y, z]);
@@ -100,4 +121,3 @@ export class HourlyDispatchComponent {
     return series;
   }
 }
-

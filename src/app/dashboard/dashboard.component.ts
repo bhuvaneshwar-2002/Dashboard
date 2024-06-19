@@ -7,12 +7,12 @@ import { ItemsCategoryComponent } from '../items-category/items-category.compone
 import { AssetTableComponent } from '../asset-table/asset-table.component';
 import { MonthlyDispatchComponent } from '../monthly-dispatch/monthly-dispatch.component';
 import { AssetOutcomeComponent } from '../asset-outcome/asset-outcome.component';
-
+import { RecentTransactionsComponent } from '../recent-transactions/recent-transactions.component';
 @Component({
   selector: 'app-dashboard',
   standalone: true,
   imports: [MatCardModule, MatButtonModule, CustDetailsComponent, HourlyDispatchComponent,
-     ItemsCategoryComponent,AssetTableComponent, MonthlyDispatchComponent, AssetOutcomeComponent],
+     ItemsCategoryComponent,AssetTableComponent, MonthlyDispatchComponent, AssetOutcomeComponent,RecentTransactionsComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })

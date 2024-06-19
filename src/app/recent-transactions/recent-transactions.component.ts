@@ -1,15 +1,30 @@
+
 import { Component } from '@angular/core';
-import { TableModule } from 'primeng/table';
-import { CommonModule } from '@angular/common';
+import { MatTableModule } from '@angular/material/table';
+
+
+export interface TrolleyData {
+  sno: string;
+  name: string;
+  condition: string;
+  category: string;
+  status: string;
+  location: string;
+  lastseen: string;
+}
+
+const ELEMENT_DATA: TrolleyData[] = [
+  {sno: '01', name: 'Trolleys', condition: 'Available', category: 'Shipping', status: 'In Production', location: 'MATE III - IN',lastseen:'25 MAY 2024, 12.45 A.M'},
+]
 
 
 @Component({
   selector: 'app-recent-transactions',
+  imports:[MatTableModule],
   standalone: true,
-  imports: [TableModule, CommonModule],
   templateUrl: './recent-transactions.component.html',
-  styleUrl: './recent-transactions.component.css'
 })
 export class RecentTransactionsComponent {
-
+  displayedColumns: string[] = ['sno', 'name', 'condition','category','status','location','lastseen'];
+  dataSource = ELEMENT_DATA;
 }

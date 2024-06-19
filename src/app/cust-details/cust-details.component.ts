@@ -34,7 +34,7 @@ export class CustDetailsComponent {
       '#FD6363',
       '#FDD7C6'
     ],
-    hoverOffset: 4,
+    hoverOffset: 10,
     borderRadius: 10
   }],
   labels: ['Hyundai','RNAIPL','Daimler',],
