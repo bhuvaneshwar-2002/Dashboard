@@ -4,14 +4,27 @@
 
         <mat-card-content >
           <span>Hourly Dispatch Details</span>
-        <apx-chart
+
+            <div class="flex-auto" style="display: flex;">
+              <label for="icondisplay" class="font-bold block mb-2" style="padding-left: 500px;
+              top: 33px;
+              position: absolute;"> Select Date </label>
+          </div>
+
+
+            <div class="card flex justify-content-center" style="position: absolute; left: 500px; width: 100px; border-radius: 10px;">
+              <p-calendar [(ngModel)]="date" class="p-calendar" />
+          </div>
+                  <p-inputSwitch [(ngModel)]="checked"/>
+          <apx-chart
           [series]="chartOptions.series!"
           [chart]="chartOptions.chart!"
           [xaxis]="chartOptions.xaxis!"
+          [dataLabels]="chartOptions.dataLabels!"
+          [grid]="chartOptions.grid!"
           [stroke]="chartOptions.stroke!"
-          [tooltip]="chartOptions.tooltip!"
-          [dataLabels]="chartOptions.dataLabels!">
-       </apx-chart>
+          [title]="chartOptions.title!"
+        ></apx-chart>
       </mat-card-content>
 
     </mat-card>

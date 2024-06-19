@@ -21,3 +21,18 @@
     width: 400px;
   }
 
+  span{
+    display: inline-flex;
+  }
+
+  input.p-element{
+    left: 346px;
+    position: absolute;
+    top: 24px;
+}
+.p-calendar .p-inputtext {
+  flex: 1 1 auto;
+  width: 1%;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+}
